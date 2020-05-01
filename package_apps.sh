@@ -2,6 +2,7 @@
 
 echo Removing eventual apt locks...
 sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
+echo
 
 echo Updating repositories...
 if ! apt-get update
@@ -10,71 +11,48 @@ then
     exit 1
 fi
 echo Update successfully!
+echo
 
 echo Installing Ubuntu packages default...
-if ! sudo apt install python3 python-pip wine nautilus-dropbox docker docker-compose git build-essential libssl-dev flatpak gnome-software-plugin-flatpak -y &&
-then
-	echo Ubuntu packages could not be installed.
-    exit 1
-fi
+sudo apt install python3 python-pip wine nautilus-dropbox docker docker-compose git build-essential libssl-dev flatpak gnome-software-plugin-flatpak -y &&
 echo Ubuntu packages have been installed!
+echo
 
 echo Installing NodeJS...
-if ! sudo snap install --edge node --classic &&
-then
-	echo NodeJS could not be installed.
-    exit 1
-fi
+sudo snap install --edge node --classic &&
 echo NodeJS was installed!
+echo
 
 echo Installing VisualStudioCode...
-if ! sudo snap install code --classic &&
-then
-	echo VisualStudioCode could not be installed.
-    exit 1
-fi
+sudo snap install code --classic &&
 echo VisualStudioCode was installed!
+echo
 
 echo Installing GoogleChrome...
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-if ! sudo dpkg -i google-chrome-stable_current_amd64.deb
-then
-	echo GoogleChrome could not be installed.
-    exit 1
-fi
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 echo GoogleChrome was installed!
+echo
 
 echo Installing Steam...
-if ! sudo apt install steam-installer
-then
-	echo Steam could not be installed.
-    exit 1
-fi
+sudo apt install steam-installer
 echo Steam was installed!
+echo
 
 echo Installing Discord...
 wget https://discordapp.com/api/download?platform=linux&format=deb -O discord.deb
-if ! sudo dpkg -i discord.deb && sudo apt-get install -f
-then
-	echo Discord could not be installed.
-    exit 1
-fi
+sudo dpkg -i discord.deb && sudo apt-get install -f
 echo Discord was installed!
+echo
 
 echo Installing Spotify...
-if ! sudo snap install spotify &&
-then
-	echo Spotify could not be installed.
-    exit 1
-fi
+sudo snap install spotify &&
 echo Spotify was installed!
+echo
 
 echo Updating packages already installed.
-if ! sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
-then
-    echo Could not update packages.
-    exit 1
-fi
+sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
 echo Package update successfully!
+echo
 
 echo Installation completed!
