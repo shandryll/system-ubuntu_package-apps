@@ -6,8 +6,14 @@ Automating Ubuntu Installation
 
 Make sure the file has execute permission.
 
-To use the Script, simply run the command:
+Commands:
 
+### Set execute permission on your script:
 ```
-sudo ./package_apps.sh
+chmod +x script-name-here.sh
+```
+
+### Run the code:
+```
+sudo sh package_apps.sh
 ```
