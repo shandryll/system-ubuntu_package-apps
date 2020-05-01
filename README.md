@@ -10,7 +10,7 @@ Commands:
 
 ### Set execute permission on your script:
 ```
-chmod +x script-name-here.sh
+chmod +x package_apps.sh
 ```
 
 ### Run the code:
