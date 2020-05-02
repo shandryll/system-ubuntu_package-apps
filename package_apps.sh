@@ -13,6 +13,11 @@ fi
 echo Update successfully!
 echo
 
+echo Install prerequisite packages to use packages over HTTPS:
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+echo Packages have been installed!
+echo
+
 echo Installing Ubuntu packages default...
 sudo apt install python3 python-pip wine nautilus-dropbox docker docker-compose git build-essential libssl-dev flatpak gnome-software-plugin-flatpak -y &&
 echo Ubuntu packages have been installed!
@@ -21,6 +26,13 @@ echo
 echo Installing NodeJS...
 sudo snap install --edge node --classic &&
 echo NodeJS was installed!
+echo
+
+echo Installing DockerCompose...
+sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+echo DockerCompose was installed!
 echo
 
 echo Installing VisualStudioCode...
