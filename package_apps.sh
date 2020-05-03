@@ -14,6 +14,11 @@ sudo apt install python3 python-pip wine nautilus-dropbox docker docker-compose 
 echo Ubuntu packages have been installed!
 echo
 
+echo Installing Git...
+sudo apt-get install git-all -y
+echo Git was installed!
+echo
+
 echo Installing NodeJS...
 sudo snap install --edge node --classic &&
 echo NodeJS was installed!
