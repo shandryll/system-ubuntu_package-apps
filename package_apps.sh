@@ -5,17 +5,8 @@ sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
 echo
 
 echo Updating repositories...
-if ! apt-get update
-then
-	echo Could not update repositories. Check your file /etc/apt/sources.list
-    exit 1
-fi
+apt-get update
 echo Update successfully!
-echo
-
-echo Install prerequisite packages to use packages over HTTPS:
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-echo Packages have been installed!
 echo
 
 echo Installing Ubuntu packages default...
@@ -26,13 +17,6 @@ echo
 echo Installing NodeJS...
 sudo snap install --edge node --classic &&
 echo NodeJS was installed!
-echo
-
-echo Installing DockerCompose...
-sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-echo DockerCompose was installed!
 echo
 
 echo Installing VisualStudioCode...
