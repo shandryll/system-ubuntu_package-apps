@@ -5,7 +5,7 @@ sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
 echo
 
 echo Updating repositories...
-apt-get update
+sudo apt-get update
 echo Update successfully!
 echo
 
