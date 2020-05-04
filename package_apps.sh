@@ -69,7 +69,7 @@ echo Spotify was installed!
 echo
 
 echo Updating packages already installed.
-sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
+sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y
 echo Package update successfully!
 echo
 
