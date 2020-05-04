@@ -57,13 +57,12 @@ echo Steam was installed!
 echo
 
 echo Installing Discord...
-wget https://discordapp.com/api/download?platform=linux&format=deb -O discord.deb
-sudo dpkg -i discord.deb && sudo apt-get install -f
+sudo snap install discord
 echo Discord was installed!
 echo
 
 echo Installing Spotify...
-sudo snap install spotify &&
+sudo snap install spotify
 echo Spotify was installed!
 echo
 
