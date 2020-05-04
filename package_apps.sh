@@ -52,7 +52,9 @@ echo Flameshot was installed!
 echo
 
 echo Installing Steam...
-sudo apt install steam-installer
+wget http://repo.steampowered.com/steam/archive/precise/steam_latest.deb
+sudo dpkg -i steam_latest.deb
+sudo apt-get install -f -y
 echo Steam was installed!
 echo
 
