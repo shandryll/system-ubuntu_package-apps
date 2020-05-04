@@ -45,6 +45,11 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 echo GoogleChrome was installed!
 echo
 
+echo Installing Dropbox...
+sudo apt install nautilus-dropbox -y
+echo Dropbox was installed!
+echo
+
 echo Installing Flameshot...
 wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_bionic_x86_64.deb -O flameshot.deb
 sudo dpkg -i flameshot.deb && sudo apt-get install -f
