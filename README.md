@@ -6,7 +6,21 @@ Automating Ubuntu Installation
 
 Make sure the file has execute permission.
 
-Commands:
+## Programs
+
+* Git
+* Python pip
+* NodeJS
+* Docker
+* Docker Compose
+* Visual Studio Code
+* Google Chrome
+* Flameshot
+* Steam
+* Discord
+* Spotify
+
+## Commands:
 
 ### Set execute permission on your script:
 ```
