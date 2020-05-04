@@ -9,23 +9,33 @@ sudo apt-get update
 echo Update successfully!
 echo
 
-echo Installing Ubuntu packages default...
-sudo apt install python3 python-pip wine nautilus-dropbox docker docker-compose git build-essential libssl-dev flatpak gnome-software-plugin-flatpak -y &&
-echo Ubuntu packages have been installed!
-echo
-
-echo Installing Git...
+echo Installing git...
 sudo apt-get install git-all -y
-echo Git was installed!
+echo git was installed!
 echo
 
-echo Installing NodeJS...
-sudo snap install --edge node --classic &&
-echo NodeJS was installed!
+echo Installing python-pip...
+sudo apt install python3-pip -y
+echo python-pip was installed!
+echo
+
+echo Installing nodeJS...
+sudo sudo apt install nodejs -y
+echo nodeJS was installed!
+echo
+
+echo Installing docker...
+sudo apt install docker.io -y
+echo docker was installed!
+echo
+
+echo Installing docker-compose...
+sudo apt install docker-compose -y
+echo docker-compose was installed!
 echo
 
 echo Installing VisualStudioCode...
-sudo snap install code --classic &&
+sudo snap install code -classic
 echo VisualStudioCode was installed!
 echo
 
