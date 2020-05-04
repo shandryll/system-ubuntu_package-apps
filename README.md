@@ -15,6 +15,7 @@ Make sure the file has execute permission.
 * Docker Compose
 * Visual Studio Code
 * Google Chrome
+* Dropbox
 * Flameshot
 * Steam
 * Discord
