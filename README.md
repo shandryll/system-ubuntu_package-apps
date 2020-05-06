@@ -25,10 +25,10 @@ Make sure the file has execute permission.
 
 ### Set execute permission on your script:
 ```
-chmod +x package_apps.sh
+chmod +x ubuntu_package_apps.sh
 ```
 
 ### Run the code:
 ```
-sudo sh package_apps.sh
+sudo sh ubuntu_package_apps.sh
 ```
