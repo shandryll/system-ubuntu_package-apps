@@ -1,13 +1,12 @@
-# system-ubuntu_package-apps
+# system_package-apps
 
-## Ubuntu Shell Script by Shandryll
+## Shell Scripts by Shandryll
 
-Automating Ubuntu Installation
+Automating Installation
 
 Make sure the file has execute permission.
 
-## Programs
-
+## Programs to Ubuntu
 * Git
 * Python pip
 * NodeJS
@@ -25,10 +24,10 @@ Make sure the file has execute permission.
 
 ### Set execute permission on your script:
 ```
-chmod +x ubuntu_package-apps.sh
+chmod +x ${distro}_package-apps.sh
 ```
 
 ### Run the code:
 ```
-sudo sh ubuntu_package-apps.sh
+sudo sh ${distro}_package-apps.sh
 ```
