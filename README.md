@@ -1,6 +1,6 @@
-# system_package-apps
+# system-ubuntu_package-apps
 
-## Shell Script by Shandryll
+## Ubuntu Shell Script by Shandryll
 
 Automating Ubuntu Installation
 
