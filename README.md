@@ -24,10 +24,10 @@ Make sure the file has execute permission.
 
 ### Set execute permission on your script:
 ```
-chmod +x ${distro}_package-apps.sh
+chmod +x ubuntu_package-apps.sh
 ```
 
 ### Run the code:
 ```
-sudo sh ${distro}_package-apps.sh
+sudo sh ubuntu_package-apps.sh
 ```
