@@ -35,7 +35,7 @@ echo docker-compose was installed!
 echo
 
 echo Installing VisualStudioCode...
-sudo snap install code -classic
+sudo snap install code --classic
 echo VisualStudioCode was installed!
 echo
 
