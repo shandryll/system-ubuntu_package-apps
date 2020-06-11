@@ -13,6 +13,7 @@ Make sure the file has execute permission.
 * NodeJS
 * Docker
 * Docker Compose
+* MongoDB
 * Visual Studio Code
 * Google Chrome
 * Dropbox
