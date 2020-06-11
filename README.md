@@ -1,4 +1,4 @@
-# system_package-apps
+# ubuntu_package-apps
 
 ## Shell Scripts by Shandryll
 
@@ -8,15 +8,14 @@ Make sure the file has execute permission.
 
 ## Programs to Ubuntu
 * Git
-* Python pip
+* Python
+* Python PIP
 * NodeJS
 * Docker
 * Docker Compose
 * Visual Studio Code
 * Google Chrome
 * Dropbox
-* Flameshot
-* Steam
 * Discord
 * Spotify
 
