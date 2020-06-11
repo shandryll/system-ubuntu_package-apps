@@ -34,6 +34,11 @@ sudo apt install docker-compose -y
 echo docker-compose was installed!
 echo
 
+echo Installing MongoDB...
+sudo apt install -y mongodb
+echo MongoDB was installed!
+echo
+
 echo Installing VisualStudioCode...
 sudo snap install code --classic
 echo VisualStudioCode was installed!
