@@ -20,7 +20,7 @@ echo python-pip was installed!
 echo
 
 echo Installing nodeJS...
-sudo sudo apt install nodejs -y
+sudo apt install nodejs -y
 echo nodeJS was installed!
 echo
 
@@ -48,19 +48,6 @@ echo
 echo Installing Dropbox...
 sudo apt install nautilus-dropbox -y
 echo Dropbox was installed!
-echo
-
-echo Installing Flameshot...
-wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_bionic_x86_64.deb -O flameshot.deb
-sudo dpkg -i flameshot.deb && sudo apt-get install -f
-echo Flameshot was installed!
-echo
-
-echo Installing Steam...
-wget http://repo.steampowered.com/steam/archive/precise/steam_latest.deb
-sudo dpkg -i steam_latest.deb
-sudo apt-get install -f -y
-echo Steam was installed!
 echo
 
 echo Installing Discord...
